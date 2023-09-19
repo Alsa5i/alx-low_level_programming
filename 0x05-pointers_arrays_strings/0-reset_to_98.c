@@ -1,10 +1,11 @@
-#include "main.h"
+#inclde "main.h"
 
 /**
- *  * reset_to_98 - a function that reset the value of n to 98.
- *   * 
- *    * Return: Always0 */
-
-	void reset_to_98(int *n ) {
-	   *n = 98;
+ * reset_to_98
+ *this function point to an intger type
+ *update the value of the var
+ */
+void reset_to_98(int *n)
+{
+	*n = 98;
 }
