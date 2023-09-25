@@ -1,10 +1,11 @@
 #include "main.h"
 /**
- * s:changed string
+ * s:changed string.
  * b:constant byte.
  * n:num of the char.
  * return: the value of string.
  */
+
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
