@@ -1,11 +1,12 @@
 #include "main.h"
-/**
- * s:changed string.
- * b:constant byte.
- * n:num of the char.
- * return: the value of string.
- */
 
+/**
+ * _memset - a function that fills memory with a constant byte.
+ * @s: string to change.
+ * @b: constant byte.
+ * @n: the num of char to change in string.
+ * Return: the value of the changed string
+ */
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
