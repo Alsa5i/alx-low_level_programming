@@ -1,12 +1,4 @@
-#include <stdio.h>
-int main()
-{
-   
-    
-    return 0;
-}
-
-
+#include "main.h"
 /**
  * s:changed string
  * b:constant byte.
