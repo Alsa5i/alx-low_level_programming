@@ -16,7 +16,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * S_sqrt_recursion - recurses to exist the natural
+ * S_sqrt_recursion - is recurses to exist the natural
  * square root of a number
  * @n: number to calculate the sqaure root of
  * @i: iterative
