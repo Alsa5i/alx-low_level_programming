@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * argstostr - function concatenates all the arguments of your program.
+ * argstostr - function concatenates all the arguments of my prog.
  * @ac: pointer
  * @av: altura
  *
