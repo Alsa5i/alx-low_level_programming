@@ -8,10 +8,11 @@
  * Return: Always 0.
  **/
 
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
 	int i;
-	(void)argc;
+
+	(void)argv;
 	i = argc - 1;
 	printf("%d\n", i);
 	return (0);
