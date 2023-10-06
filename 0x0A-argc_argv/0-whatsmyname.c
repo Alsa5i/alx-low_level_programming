@@ -1,13 +1,12 @@
 #include <stdio.h>
 
- /**
-  * main - is a function that print the name,
-  * that we pass to it follo by new line.
-  * @argc: counter of the array argv.
-  * @argv: is an array cotain the argument of our programm.
-  *
-  * Return:return  always 0
-  **/
+/**
+ * main - a program that prints its name, followed by a new line
+ * @argc: number of arguments
+ * @argv: array with the arguments
+ *
+ * Return: always 0
+ **/
 
 int main(int argc, char *argv[])
 {
