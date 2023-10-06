@@ -5,6 +5,7 @@
   * that we pass to it follo by new line.
   * @argc: counter of the array argv.
   * @argv: is an array cotain the argument of our programm.
+  *
   * Return:return  always 0
   **/
 
