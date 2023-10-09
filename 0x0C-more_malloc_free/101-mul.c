@@ -11,6 +11,7 @@
 void _print(char *str, int l)
 {
 	int f, pu;
+
 	f = pu = 0;
 	while (f < l)
 	{
