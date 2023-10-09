@@ -10,15 +10,15 @@
  */
 void _print(char *str, int l)
 {
-	int f, pu;
+	int i, j;
 
-	f = pu = 0;
-	while (f < l)
+	i = j = 0;
+	while (i < l)
 	{
-		if (str[f] != '0')
-			pu = 1;
-		if (pu || f == l - 1)
-			_putchar(str[f]);
+		if (str[i] != '0')
+			j = 1;
+		if (j || i == l - 1)
+			_putchar(str[i]);
 		i++;
 	}
 
@@ -38,12 +38,12 @@ void _print(char *str, int l)
  */
 char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 {
-	int jym, k, mul, mulrem, add, addrem;
+	int j, k, mul, mulrem, add, addrem;
 
 	mulrem = addrem = 0;
-	for (jym = num_index, k = dest_index; jym >= 0; jym--, k--)
+	for (j = num_index, k = dest_index; j >= 0; j--, k--)
 	{
-		mul = (n - '0') * (num[jym] - '0') + mulrem;
+		mul = (n - '0') * (num[j] - '0') + mulrem;
 		mulrem = mul / 10;
 		add = (dest[k] - '0') + (mul % 10) + addrem;
 		addrem = add / 10;
@@ -69,13 +69,13 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
  */
 int check_for_digits(char **av)
 {
-	int i, fjk;
+	int i, j;
 
 	for (i = 1; i < 3; i++)
 	{
-		for (j = 0; av[i][fjk]; fjk++)
+		for (j = 0; av[i][j]; j++)
 		{
-			if (av[i][fjk] < '0' || av[i][fjk] > '9')
+			if (av[i][j] < '0' || av[i][j] > '9')
 				return (1);
 		}
 	}
@@ -91,11 +91,11 @@ int check_for_digits(char **av)
  */
 void init(char *str, int l)
 {
-	int i_for;
+	int i;
 
-	for (i_for = 0; i_for < l; i_for++)
-		str[i_for] = '0';
-	str[i_for] = '\0';
+	for (i = 0; i < l; i++)
+		str[i] = '0';
+	str[i] = '\0';
 }
 
 /**
