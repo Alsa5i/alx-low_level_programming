@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - a function that concatenates two strings.
- * @s1: first string to copy
- * @s2: second string to copy
+ * string_nconcat - function that concatenates two strings.
+ * @s1: first string
+ * @s2: second string
  * @n: number of bytes of s2 to copy
  *
  * Return: char pointer to newly allocated place in memory
@@ -12,7 +12,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, j, k;
-	char *s;
+	char *stri;
 
 	if (s1 == NULL)
 	{
@@ -26,13 +26,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		for (j = 0; s2[j]; j++)
 	if (j > n)
 		j = n;
-	s = malloc(sizeof(char) * (i + j + 1));
-	if (s == NULL)
+	stri = malloc(sizeof(char) * (i + j + 1));
+	if (stri == NULL)
 		return (NULL);
 	for (k = 0; k < i; k++)
-		s[k] = s1[k];
+		stri[k] = s1[k];
 	for (k = 0; k < j; k++)
-		s[k + i] = s2[k];
-	s[i + j] = '\0';
-	return (s);
+		stri[k + i] = s2[k];
+	stri[i + j] = '\0';
+	return (stri);
 }
