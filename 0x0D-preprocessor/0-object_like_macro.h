@@ -1,1 +1,4 @@
-#define ABS SIZE 1024
+#ifndef ABS
+#define ABS SIZE
+#define SIZE 1024
+#endif
