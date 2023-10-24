@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_nodeint - will add node in the begi
+ * add_nodeint_end - will add node in the end
  * @head: poiter to the head
  * @n:is an integer value
  *
