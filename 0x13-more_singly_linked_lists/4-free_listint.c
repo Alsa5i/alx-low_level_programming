@@ -3,7 +3,6 @@
 /**
  * free_listint - a func that frees a listint_t list
  * @head: point to the head of the list
- * @n: The integer value to be added to the new node
  *
  * Return: address of the new
  */
