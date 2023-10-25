@@ -1,8 +1,6 @@
 #include "lists.h"
-
 /**
  * print_listint - Write a function that prints all
- * the elements of a listint_t list
  * @h: the value must retern
  *
  * Return: return NEXT value
