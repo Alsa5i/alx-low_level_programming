@@ -2,8 +2,8 @@
 
 /**
  * flip_bits - flip bits
- * @n: 1st
- * @m: 2end
+ * @n: st
+ * @m: end
  * Return: num
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
