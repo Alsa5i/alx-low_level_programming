@@ -7,7 +7,8 @@
  */
 void print_binary(unsigned long int n)
 {
-	int BIT_ = 0, NUMBERS = 8 * sizeof(n), Ind;
+	int BIT = 0;
+	int NUMBERS = 8 * sizeof(n), Ind;
 
 	if (n == 0)
 	{
@@ -19,13 +20,13 @@ void print_binary(unsigned long int n)
 	{
 		unsigned long int batc = 1UL << Ind;
 
-		if (BIT_)
+		if (BIT)
 		{
 			_putchar('0');
 		}
 		else if ((n & batc) != 0)
 		{
-			BIT_ = 1;
+			BIT = 1;
 			_putchar('1');
 		}
 	}
